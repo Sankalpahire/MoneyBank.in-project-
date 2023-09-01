@@ -1,0 +1,303 @@
+:root{
+  --active-lk : #f51f8a;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.topbar{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+.topbar-txt{
+  color: white;
+}  
+.topbar-txt:hover{
+  color:black !important;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar{
+  height: 40px;
+  cursor: pointer;
+}
+
+.welcomes{
+  margin: 40px;
+}
+
+.contact-us{
+   margin:40px;
+   margin-top: 15px;
+}
+
+.customer-support{
+  margin:40px;
+}
+
+.nav-bar {
+  background-color: aliceblue;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px 25px; /* Adjust the padding as needed */
+}
+.navbar-collapse{
+  flex-grow: 0.6 !important;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(83, 62, 62);
+  margin-left: 300px;
+}
+
+li {
+  list-style: none;
+  margin-left: 0; /* Adjust the margin as needed */
+}
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color:black;
+  font-weight: 400;
+
+}
+
+.dropdown .btn.dropdown-toggle {
+  border-radius: 50px;
+  position: fixed;
+  z-index: 99;
+  bottom: 45px;
+  right: 50%;
+  transform: translate(50%); 
+}
+
+
+  .slider {
+      background-size: cover !important;
+      background-position: 50% 20% !important;
+      padding: 200px 0;
+      position: relative;
+      height: 700px;
+    }
+    
+    @media (max-width: 768px) {
+      .slider {
+        padding: 150px 0;
+      }
+    }
+    
+    .slider .block  {
+      letter-spacing: 1px;
+    }
+    @media (max-width: 992px) {
+      .slider .block  {
+        font-size: 56px;
+        line-height: 70px;
+      }
+    }
+    @media (max-width: 768px) {
+    
+      .slider .block  {
+        font-size: 48px;
+        line-height: 120px;
+      }
+    }
+    
+    .overly, .hero-img, .cta, .slider, .page-title {
+      position: relative;
+    }
+    .overly:before, .hero-img:before, .cta:before, .slider:before, .page-title:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background: #000;
+    }
+
+    .breadcrump { 
+      text-decoration: none;
+      color: white;
+    }
+
+    .container {
+      margin-top: 20px;
+      padding: 20px;
+    }
+    
+    .page-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .btn-action {
+      display: flex;
+      align-items: center;
+    }
+    
+    .btn-action .btn {
+      margin-right: 20px;
+    }
+    
+.card-v3 {
+background-color: white;
+position: relative;
+}
+
+
+
+
+ 
+.footer {
+  background-color: #1d1919;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-left:150px;
+  padding-right:150px;
+  padding-top:50px;
+  background-color:rgba(rgb(31, 19, 19), green, blue, alpha);
+  
+  
+}
+
+
+
+.footer-about,
+.footer-links,
+.important-links,
+.Calculators {
+  margin-bottom: 20px;
+  color: #fff;
+  
+}
+
+.footer-about, .footer-links , .Calculators , .important-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: auto;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #7a7a7a !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: var(--active-lk) !important;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #000;
+}
+.footer-bottom p{
+  color: #fff;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+}
+
+.footer-icons i {
+  margin-right: 10px;
+  color: #666;
+}
+
+
+.footer-about {
+text-align: center;
+}
+
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+
+}
+
+.footer-bottom {
+text-align: center;
+margin: 0;
+padding-left: 0;
+padding-right: 0;
+background-color:#000;
+}
+
+.footer-bottom p {
+margin: 0;
+}
+
+.footer-bottom a {
+color: #777777;
+text-decoration: none;
+}
+
+.footer-bottom a:hover {
+color: #f51f8a;
+}
+
+
+
+  
+
+
+
+  
+  
+ 
+    
+  
